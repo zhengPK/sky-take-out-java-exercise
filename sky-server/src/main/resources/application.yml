@@ -1,6 +1,6 @@
 server:
   port: 8080
-
+# profiles.active 开启dev 会去读取 application-dev.yml 文件
 spring:
   profiles:
     active: dev

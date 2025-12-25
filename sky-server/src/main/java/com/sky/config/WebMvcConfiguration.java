@@ -17,6 +17,11 @@ import springfox.documentation.spring.web.plugins.Docket;
 
 /**
  * 配置类，注册web层相关组件
+ * WebMvcConfigurer：
+ * 主要用于添加或修改Spring MVC的配置，如添加拦截器，自定义消息转换器等。
+ * WebMvcConfigurationSupport：
+ * 主要用于完全自定义Spring MVC的配置，如果我们需要对Spring MVC的配置进行大量的自定义，可以选择继承该类并重写其中的方法。但是需要注意的是，继承该类会覆盖Spring MVC的部分默认配置。因此，当我们只需要对部分配置进行自定义时，应该使用WebMvcConfigurer。
+ *
  */
 @Configuration
 @Slf4j
